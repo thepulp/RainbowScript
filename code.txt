@@ -1,0 +1,66 @@
+program code {
+
+    var x;
+    x = 20;
+
+    var y;
+
+    y="INICIO";
+    println (y);
+
+
+    y="Condicional";
+    println (y);
+    if(x<=22)
+    {
+        println (x);
+        x=x+10;
+    }else
+    {
+        println (50);
+    }
+
+
+    y="While";
+    println (y);
+    while(x>=12)
+    {
+        x=x-1;
+        println (x);
+    }
+
+
+    y="DoRepeat";
+    println (y);
+    do
+        {
+            x = x-1;
+            println (x);
+        }while(x>=4)
+
+
+    y="Cuadrado"; 
+    println (y);
+    square(x);
+
+
+    y="Potencia";
+    println (y);
+    var w;
+    w = 3;
+    var z;
+    z = 4;
+    pow(w,z);
+
+
+    y="Negacion";
+    println (y);
+    if(!(z==6))
+    {
+    println(w);
+    }
+
+
+
+
+}
