@@ -1,25 +1,19 @@
-
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-
 /**
  *
  * @author fvarg
  */
-public class Vista extends javax.swing.JFrame {
+public class IDE extends javax.swing.JFrame {
 
     /**
-     * Creates new form Vista
+     * Creates new form IDE
      */
-    public Vista() {
+    public IDE() {
         initComponents();
     }
 
@@ -32,73 +26,26 @@ public class Vista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn_reservadas = new javax.swing.JButton();
+        btn_abrir = new javax.swing.JButton();
         btn_nuevo = new javax.swing.JButton();
         btn_guardar = new javax.swing.JButton();
-        btn_abrir = new javax.swing.JButton();
-        btn_reservadas = new javax.swing.JButton();
         btn_indentado = new javax.swing.JButton();
         btn_tokens = new javax.swing.JButton();
         btn_Compilar = new javax.swing.JButton();
-        Btn_Salir = new javax.swing.JLabel();
-        Titulo_App = new javax.swing.JLabel();
-        Titulo_App1 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jtp_Code = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jtaCompile = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        Titulo_App1 = new javax.swing.JLabel();
         Titulo_Consola = new javax.swing.JLabel();
-        Logo = new javax.swing.JLabel();
-        Fondo = new javax.swing.JLabel();
+        Btn_Salir = new javax.swing.JLabel();
+        Titulo_App = new javax.swing.JLabel();
+        fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btn_nuevo.setBackground(new java.awt.Color(0, 0, 0));
-        btn_nuevo.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
-        btn_nuevo.setForeground(new java.awt.Color(255, 255, 255));
-        btn_nuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/icons8_code_file_48px.png"))); // NOI18N
-        btn_nuevo.setText("Nuevo");
-        btn_nuevo.setToolTipText("Nuevo documento");
-        btn_nuevo.setBorderPainted(false);
-        btn_nuevo.setContentAreaFilled(false);
-        btn_nuevo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_nuevo.setFocusPainted(false);
-        btn_nuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_nuevo.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(btn_nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
-
-        btn_guardar.setBackground(new java.awt.Color(0, 0, 0));
-        btn_guardar.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
-        btn_guardar.setForeground(new java.awt.Color(255, 255, 255));
-        btn_guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/icons8_save_48px.png"))); // NOI18N
-        btn_guardar.setText("Guardar");
-        btn_guardar.setToolTipText("Guardar documento");
-        btn_guardar.setBorderPainted(false);
-        btn_guardar.setContentAreaFilled(false);
-        btn_guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_guardar.setFocusPainted(false);
-        btn_guardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_guardar.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        btn_guardar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_guardarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
-
-        btn_abrir.setBackground(new java.awt.Color(0, 0, 0));
-        btn_abrir.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
-        btn_abrir.setForeground(new java.awt.Color(255, 255, 255));
-        btn_abrir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/icons8_opened_folder_48px.png"))); // NOI18N
-        btn_abrir.setText("Abrir");
-        btn_abrir.setToolTipText("Abrir Documento");
-        btn_abrir.setBorderPainted(false);
-        btn_abrir.setContentAreaFilled(false);
-        btn_abrir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btn_abrir.setFocusPainted(false);
-        btn_abrir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_abrir.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(btn_abrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
 
         btn_reservadas.setBackground(new java.awt.Color(0, 0, 0));
         btn_reservadas.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
@@ -112,7 +59,49 @@ public class Vista extends javax.swing.JFrame {
         btn_reservadas.setFocusPainted(false);
         btn_reservadas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_reservadas.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(btn_reservadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+        getContentPane().add(btn_reservadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+
+        btn_abrir.setBackground(new java.awt.Color(0, 0, 0));
+        btn_abrir.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
+        btn_abrir.setForeground(new java.awt.Color(255, 255, 255));
+        btn_abrir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/icons8_opened_folder_48px.png"))); // NOI18N
+        btn_abrir.setText("Abrir");
+        btn_abrir.setToolTipText("Abrir Documento");
+        btn_abrir.setBorderPainted(false);
+        btn_abrir.setContentAreaFilled(false);
+        btn_abrir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_abrir.setFocusPainted(false);
+        btn_abrir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_abrir.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        getContentPane().add(btn_abrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+
+        btn_nuevo.setBackground(new java.awt.Color(0, 0, 0));
+        btn_nuevo.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
+        btn_nuevo.setForeground(new java.awt.Color(255, 255, 255));
+        btn_nuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/icons8_code_file_48px.png"))); // NOI18N
+        btn_nuevo.setText("Nuevo");
+        btn_nuevo.setToolTipText("Nuevo documento");
+        btn_nuevo.setBorderPainted(false);
+        btn_nuevo.setContentAreaFilled(false);
+        btn_nuevo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_nuevo.setFocusPainted(false);
+        btn_nuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_nuevo.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        getContentPane().add(btn_nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        btn_guardar.setBackground(new java.awt.Color(0, 0, 0));
+        btn_guardar.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
+        btn_guardar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/icons8_save_48px.png"))); // NOI18N
+        btn_guardar.setText("Guardar");
+        btn_guardar.setToolTipText("Guardar documento");
+        btn_guardar.setBorderPainted(false);
+        btn_guardar.setContentAreaFilled(false);
+        btn_guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btn_guardar.setFocusPainted(false);
+        btn_guardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_guardar.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        getContentPane().add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         btn_indentado.setBackground(new java.awt.Color(0, 0, 0));
         btn_indentado.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
@@ -126,7 +115,7 @@ public class Vista extends javax.swing.JFrame {
         btn_indentado.setFocusPainted(false);
         btn_indentado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_indentado.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(btn_indentado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, -1, -1));
+        getContentPane().add(btn_indentado, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
 
         btn_tokens.setBackground(new java.awt.Color(0, 0, 0));
         btn_tokens.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
@@ -140,7 +129,7 @@ public class Vista extends javax.swing.JFrame {
         btn_tokens.setFocusPainted(false);
         btn_tokens.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_tokens.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(btn_tokens, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, -1, -1));
+        getContentPane().add(btn_tokens, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, -1, -1));
 
         btn_Compilar.setBackground(new java.awt.Color(0, 0, 0));
         btn_Compilar.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
@@ -159,7 +148,37 @@ public class Vista extends javax.swing.JFrame {
                 btn_CompilarActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_Compilar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, -1, -1));
+        getContentPane().add(btn_Compilar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
+
+        jtp_Code.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
+        jtp_Code.setToolTipText("");
+        jScrollPane3.setViewportView(jtp_Code);
+
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 500, 600));
+
+        jtaCompile.setEditable(false);
+        jtaCompile.setColumns(20);
+        jtaCompile.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
+        jtaCompile.setRows(5);
+        jtaCompile.setToolTipText("");
+        jScrollPane2.setViewportView(jtaCompile);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 470, 470, 160));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/RainbowScript.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 70, 300, 150));
+
+        Titulo_App1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
+        Titulo_App1.setForeground(new java.awt.Color(255, 255, 255));
+        Titulo_App1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Titulo_App1.setText("RainbowScript");
+        getContentPane().add(Titulo_App1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, 330, -1));
+
+        Titulo_Consola.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
+        Titulo_Consola.setForeground(new java.awt.Color(255, 255, 255));
+        Titulo_Consola.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Titulo_Consola.setText("Consola:");
+        getContentPane().add(Titulo_Consola, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 446, 470, 20));
 
         Btn_Salir.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 58)); // NOI18N
         Btn_Salir.setForeground(new java.awt.Color(255, 255, 255));
@@ -171,76 +190,28 @@ public class Vista extends javax.swing.JFrame {
                 Btn_SalirMouseClicked(evt);
             }
         });
-        getContentPane().add(Btn_Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 0, 60, -1));
+        getContentPane().add(Btn_Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1131, 0, 60, -1));
 
         Titulo_App.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
         Titulo_App.setForeground(new java.awt.Color(255, 255, 255));
         Titulo_App.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo_App.setText("RainbowScript");
-        getContentPane().add(Titulo_App, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 90, 330, -1));
+        Titulo_App.setText("Compilador Equipo 4");
+        getContentPane().add(Titulo_App, new org.netbeans.lib.awtextra.AbsoluteConstraints(652, 100, 330, -1));
 
-        Titulo_App1.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 24)); // NOI18N
-        Titulo_App1.setForeground(new java.awt.Color(255, 255, 255));
-        Titulo_App1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo_App1.setText("Compilador Equipo 4");
-        getContentPane().add(Titulo_App1, new org.netbeans.lib.awtextra.AbsoluteConstraints(672, 60, 320, -1));
-
-        jtp_Code.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
-        jtp_Code.setToolTipText("");
-        jScrollPane3.setViewportView(jtp_Code);
-
-        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 530, 620));
-
-        jtaCompile.setEditable(false);
-        jtaCompile.setColumns(20);
-        jtaCompile.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
-        jtaCompile.setRows(5);
-        jtaCompile.setToolTipText("");
-        jtaCompile.addContainerListener(new java.awt.event.ContainerAdapter() {
-            public void componentAdded(java.awt.event.ContainerEvent evt) {
-                jtaCompileComponentAdded(evt);
-            }
-        });
-        jScrollPane2.setViewportView(jtaCompile);
-
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 480, 470, 160));
-
-        Titulo_Consola.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
-        Titulo_Consola.setForeground(new java.awt.Color(255, 255, 255));
-        Titulo_Consola.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo_Consola.setText("Consola:");
-        getContentPane().add(Titulo_Consola, new org.netbeans.lib.awtextra.AbsoluteConstraints(702, 456, 470, 20));
-
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/RainbowScript.png"))); // NOI18N
-        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 290, 140));
-
-        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/fondo1.jpg"))); // NOI18N
-        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 670));
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Icon/fondo1.jpg"))); // NOI18N
+        fondo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 670));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btn_CompilarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CompilarActionPerformed
-      
-    }//GEN-LAST:event_btn_CompilarActionPerformed
 
     private void Btn_SalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btn_SalirMouseClicked
         dispose();
     }//GEN-LAST:event_Btn_SalirMouseClicked
 
-    private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
-        
-    }//GEN-LAST:event_btn_guardarActionPerformed
-
-    private void jtaCompileComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_jtaCompileComponentAdded
-            String path = "C:\\Users\\HP\\Documents\\NetBeansProjects\\RainbowScript\\src\\Main.jar";
-        try {
-            Process process = Runtime.getRuntime().exec("java -jar " + path + "Main.jar");
-            
-        } catch (IOException ex) {
-            Logger.getLogger(Vista.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jtaCompileComponentAdded
+    private void btn_CompilarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CompilarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_CompilarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -259,28 +230,26 @@ public class Vista extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IDE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IDE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IDE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IDE.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Vista().setVisible(true);
+                new IDE().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Btn_Salir;
-    private javax.swing.JLabel Fondo;
-    private javax.swing.JLabel Logo;
     private javax.swing.JLabel Titulo_App;
     private javax.swing.JLabel Titulo_App1;
     private javax.swing.JLabel Titulo_Consola;
@@ -291,6 +260,8 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JButton btn_nuevo;
     private javax.swing.JButton btn_reservadas;
     private javax.swing.JButton btn_tokens;
+    private javax.swing.JLabel fondo;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jtaCompile;
