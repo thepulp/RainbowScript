@@ -1,9 +1,14 @@
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PruebaDePush;
+
 
 /**
  *
@@ -74,6 +79,11 @@ public class Vista extends javax.swing.JFrame {
         btn_guardar.setFocusPainted(false);
         btn_guardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_guardar.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        btn_guardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_guardarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         btn_abrir.setBackground(new java.awt.Color(0, 0, 0));
@@ -149,7 +159,7 @@ public class Vista extends javax.swing.JFrame {
                 btn_CompilarActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_Compilar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, -1, -1));
+        getContentPane().add(btn_Compilar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, -1, -1));
 
         Btn_Salir.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 58)); // NOI18N
         Btn_Salir.setForeground(new java.awt.Color(255, 255, 255));
@@ -186,6 +196,11 @@ public class Vista extends javax.swing.JFrame {
         jtaCompile.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 0, 14)); // NOI18N
         jtaCompile.setRows(5);
         jtaCompile.setToolTipText("");
+        jtaCompile.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                jtaCompileComponentAdded(evt);
+            }
+        });
         jScrollPane2.setViewportView(jtaCompile);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 480, 470, 160));
@@ -206,12 +221,26 @@ public class Vista extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_CompilarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CompilarActionPerformed
-        // TODO add your handling code here:
+      
     }//GEN-LAST:event_btn_CompilarActionPerformed
 
     private void Btn_SalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btn_SalirMouseClicked
         dispose();
     }//GEN-LAST:event_Btn_SalirMouseClicked
+
+    private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
+        
+    }//GEN-LAST:event_btn_guardarActionPerformed
+
+    private void jtaCompileComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_jtaCompileComponentAdded
+            String path = "C:\\Users\\HP\\Documents\\NetBeansProjects\\RainbowScript\\src\\Main.jar";
+        try {
+            Process process = Runtime.getRuntime().exec("java -jar " + path + "Main.jar");
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Vista.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jtaCompileComponentAdded
 
     /**
      * @param args the command line arguments
